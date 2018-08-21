@@ -4,13 +4,162 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>My Project</title>
+	<title>Rick Storm - Graphic Designer </title>
 	<link rel="stylesheet" href="./public/styles/style.css">
+	<!-- favicon nog plaatsen!!! -->
+	<link rel="icon" type="image/png" sizes="16x16" href="./public/assets/favicon.ico">
+
 </head>
 <body>
+	<!-- page header start -->
+	<header>
+		<div class="header-wrapper">
+			<a href="http://rickstorm.nl">
+				<h1 class="header-name">Rick Storm</h1>
+			</a>
+		</div>
+		<div class="header-hamburger">
+			<button class="hambuger hamburger-squeeze" type="button" aria-label="menu" aria-controls="navigation">
+			</button>
+		</div>
+	</header>
+	<!-- page header ends -->
 
-	<h1>Hello World!</h1>
+	<!-- page navigation start -->
+	<nav class="menu-wrapper">
+		<div class="menu-wrapper-inner">
+			<ul class="menu-items">
+				<li class="menu-item">
+					<a class="menu-itemLink projects" href="http://rickstorm.nl">
+						<h1 class="nav-title">Projects</h1>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink" href="http://rickstorm.nl/shift-2019">
+						<h2 class="nav-title">Shift 2019</h2>
+						<h3 class="nav-description">Identity</h3>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink" href="http://rickstorm.nl/museum-voorlinden">
+						<h2 class="nav-title">Museum Voorlinden</h2>
+						<h3 class="nav-description">Identity</h3>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink" href="http://rickstorm.nl/anne-yoga">
+						<h2 class="nav-title">Anne Yoga</h2>
+						<h3 class="nav-description">Identity</h3>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink" href="http://rickstorm.nl/filmhuis-denHaag">
+						<h2 class="nav-title">Filmhuis Den Haag</h2>
+						<h3 class="nav-description">Identity</h3>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink" href="http://rickstorm.nl/tulla">
+						<h2 class="nav-title">Tulla Culture Center</h2>
+						<h3 class="nav-description">Identity</h3>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink" href="http://rickstorm.nl/traveling-through">
+						<h2 class="nav-title">Traveling Through</h2>
+						<h3 class="nav-description">Illustration</h3>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink" href="http://rickstorm.nl/structures-of-tirana">
+						<h2 class="nav-title">Structures Of Tirana</h2>
+						<h3 class="nav-description">Photography</h3>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink" href="http://rickstorm.nl/hostel-durres">
+						<h2 class="nav-title">Hostel Durres</h2>
+						<h3 class="nav-description">Identity</h3>
+					</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-itemLink contact" href="http://rickstorm.nl/contact">
+						<h1 class="nav-title">Let's Connect</h1>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- page navigation ends -->
+	
+	<!-- page main content start -->
+	<main class="project-gallery-container">
+		<!-- item Shift 2019 -->
+		<div class="section-column left">
+			<article class="index-item">
+				<a class="index-item-link" href="shift-2019.html">
+					<figure class="index-item-image-wrapper">
+						<img src="./public/assets/portfolio/image_002.jpg" alt="Portfolio item shift 2019">
+						<figcaption>
+							<p class="index-item-title">Shift 2019</p>
+							<p class="index-item-description">Identity</p>
+						</figcaption>
+					</figure>
+				</a>
+			</article>
+		</div>
+		<!-- item Museum Voorlinden -->
+		<div class="section-column right">
+			<article class="index-item">
+				<a class="index-item-link" href="shift-2019.html">
+					<figure class="index-item-image-wrapper">
+						<img src="./public/assets/portfolio/image_002.jpg" alt="Portfolio item Museum Voorlinden">
+						<figcaption>
+							<p class="index-item-title">Museum Voorlinden</p>
+							<p class="index-item-description">Identity</p>
+						</figcaption>
+					</figure>
+				</a>
+			</article>
+		</div>
+		<!-- item Anne Yoga -->
+		<div class="section-column left">
+			<article class="index-item">
+				<a class="index-item-link" href="shift-2019.html">
+					<figure class="index-item-image-wrapper">
+						<img src="./public/assets/portfolio/image_002.jpg" alt="Portfolio item Anne Yoga">
+						<figcaption>
+							<p class="index-item-title">Anne Yoga</p>
+							<p class="index-item-description">Identity</p>
+						</figcaption>
+					</figure>
+				</a>
+			</article>
+		</div>
+		<!-- item Filmhuis Den Haag -->
+		<div class="section-column right">
+			<article class="index-item">
+				<a class="index-item-link" href="shift-2019.html">
+					<figure class="index-item-image-wrapper">
+						<img src="./public/assets/portfolio/image_002.jpg" alt="Portfolio item Filmhuis Den Haag">
+						<figcaption>
+							<p class="index-item-title">Filmhuis Den haag</p>
+							<p class="index-item-description">Identity</p>
+						</figcaption>
+					</figure>
+				</a>
+			</article>
+		</div>
+	</main>
+	<!-- page main content ends -->
 
-	<script src="public/scripts/main.js"></script>
+	<!-- page footer start -->
+	<footer>
+
+	</footer>
+	<!-- page footer ends -->
+
+
+	<script src="./public/scripts/main.js"></script>
 </body>
 </html>

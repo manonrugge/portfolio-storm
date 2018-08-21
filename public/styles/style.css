@@ -1,3 +1,11 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto; }
+
+body {
+  background-color: papayawhip;
+  font-family: "sofiapro", sans-serif; }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -131,9 +139,108 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto; }
+.menu-wrapper {
+  display: none; }
 
-body {
-  background-color: papayawhip; }
+.project-gallery-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.section-column {
+  width: calc(50% - 10px); }
+
+.left {
+  margin-right: 5px; }
+
+.right {
+  margin-left: 5px; }
+
+.index-item-image-wrapper img {
+  width: 100%; }
+
+figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.cover-image-wrapper,
+.single-image-wrapper {
+  margin-bottom: 10px; }
+
+.cover-image-inner img,
+.single-image-wrapper img,
+.double-image-wrapper img {
+  width: 100%;
+  display: block; }
+
+.double-image-wrapper {
+  width: 100%; }
+  .double-image-wrapper .double-image-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .double-image-wrapper .double-image-inner img {
+      width: calc(50% - 10px); }
+      .double-image-wrapper .double-image-inner img:first-of-type {
+        margin-right: 10px;
+        border: 2px solid red; }
+
+.site-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 110px 40px 110px; }
+
+.text-content-inner {
+  padding: 80px 160px 40px 160px; }
+  .text-content-inner .project-description {
+    margin: 0; }
+  .text-content-inner .project-subDescription {
+    margin-top: 20px; }
+
+.arrow {
+  position: relative; }
+  .arrow .arrow-inner .arrow-left {
+    position: absolute;
+    height: 10px;
+    width: 20px;
+    top: -15px;
+    left: -30px; }
+  .arrow .arrow-inner .arrow-right {
+    position: absolute;
+    height: 10px;
+    width: 20px;
+    top: -15px;
+    left: 45px; }
+
+@font-face {
+  font-family: 'sofiapro';
+  src: url("../fonts/sofiapro.eot");
+  src: url("../fonts/sofiapro.eot?#iefix") format("embedded-opentype"), url("../fonts/sofiapro.woff") format("woff"), url("../fonts/sofiapro.woff2") format("woff2"), url("../fonts/sofiapro.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }

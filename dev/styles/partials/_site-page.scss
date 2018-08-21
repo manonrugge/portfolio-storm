@@ -1,0 +1,29 @@
+.cover-image-wrapper,
+.single-image-wrapper {
+    margin-bottom: 10px;
+}
+
+
+.cover-image-inner,
+.single-image-wrapper,
+.double-image-wrapper {
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.double-image-wrapper {
+    width: 100%;
+    .double-image-inner {
+        display: flex;
+        flex-direction: row;
+        img {
+            width: calc(50% - 10px);
+            &:first-of-type {
+                margin-right: 10px;
+                border: 2px solid red;
+            }
+        }
+    }
+}

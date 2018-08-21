@@ -1,4 +1,4 @@
-@import 'setup';
+$font: 'sofiapro', sans-serif;
 
 .container {
 	max-width: 900px;
@@ -7,4 +7,24 @@
 
 body {
 	background-color: papayawhip;
+	font-family: $font;
+}
+
+
+@import 'setup';
+@import 'partials/header';
+@import 'partials/menu';
+@import 'partials/index-item';
+@import 'partials/site-page';
+@import 'partials/footer-page';
+
+@font-face {
+    font-family: 'sofiapro';
+    src: url('../fonts/sofiapro.eot');
+    src: url('../fonts/sofiapro.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sofiapro.woff') format('woff'),
+         url('../fonts/sofiapro.woff2') format('woff2'),
+         url('../fonts/sofiapro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
