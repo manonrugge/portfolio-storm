@@ -3,15 +3,22 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 40px 110px 40px 110px;
+    a {
+        font-size: $h4;
+    }
 }
 
 .text-content-inner {
     padding: 80px 160px 40px 160px;
+    
     .project-description {
         margin: 0;
+        font-size: $h3;
+        line-height: 24px;
     }
     .project-subDescription {
         margin-top: 20px;
+        font-size: $h4;
     }
 }
 

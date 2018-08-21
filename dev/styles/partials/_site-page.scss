@@ -19,10 +19,10 @@
         display: flex;
         flex-direction: row;
         img {
-            width: calc(50% - 10px);
-            &:first-of-type {
-                margin-right: 10px;
-                border: 2px solid red;
+            width: calc(50% - 5px); 
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0px;
             }
         }
     }

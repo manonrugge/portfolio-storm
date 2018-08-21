@@ -154,7 +154,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
       flex-wrap: wrap; }
 
 .section-column {
-  width: calc(50% - 10px); }
+  width: calc(50% - 5px);
+  margin-bottom: 10px; }
+  .section-column:nth-child(3), .section-column:nth-child(4) {
+    margin-bottom: 0; }
 
 .left {
   margin-right: 5px; }
@@ -162,8 +165,11 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 .right {
   margin-left: 5px; }
 
-.index-item-image-wrapper img {
-  width: 100%; }
+.index-item-image-wrapper {
+  position: relative; }
+  .index-item-image-wrapper img {
+    width: 100%;
+    display: block; }
 
 figcaption {
   display: -webkit-box;
@@ -176,6 +182,17 @@ figcaption {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  figcaption .index-item-title,
+  figcaption .index-item-description {
+    margin: 0;
+    position: absolute;
+    font-size: 14px; }
+  figcaption .index-item-title {
+    bottom: 40px;
+    left: 80px; }
+  figcaption .index-item-description {
+    bottom: 40px;
+    right: 80px; }
 
 .cover-image-wrapper,
 .single-image-wrapper {
@@ -198,10 +215,10 @@ figcaption {
         -ms-flex-direction: row;
             flex-direction: row; }
     .double-image-wrapper .double-image-inner img {
-      width: calc(50% - 10px); }
-      .double-image-wrapper .double-image-inner img:first-of-type {
-        margin-right: 10px;
-        border: 2px solid red; }
+      width: calc(50% - 5px);
+      margin-right: 10px; }
+      .double-image-wrapper .double-image-inner img:last-child {
+        margin-right: 0px; }
 
 .site-footer {
   display: -webkit-box;
@@ -215,13 +232,18 @@ figcaption {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 40px 110px 40px 110px; }
+  .site-footer a {
+    font-size: 14px; }
 
 .text-content-inner {
   padding: 80px 160px 40px 160px; }
   .text-content-inner .project-description {
-    margin: 0; }
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px; }
   .text-content-inner .project-subDescription {
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-size: 14px; }
 
 .arrow {
   position: relative; }
