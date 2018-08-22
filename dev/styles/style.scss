@@ -2,6 +2,8 @@ $h1: 22px;
 $h2: 18px;
 $h3: 16px;
 $h4: 14px;
+
+$black: #000;
 $font: 'sofiapro', sans-serif;
 
 .container {
@@ -14,10 +16,14 @@ body {
 	font-family: $font;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 @import 'setup';
 @import 'partials/header';
-@import 'partials/menu';
+@import 'partials/side-nav';
 @import 'partials/index-item';
 @import 'partials/site-page';
 @import 'partials/footer-page';
