@@ -3,11 +3,13 @@
   margin: 0 auto; }
 
 body {
-  background-color: papayawhip;
+  background-color: #fff;
   font-family: "sofiapro", sans-serif; }
 
 a {
   text-decoration: none; }
+  a:visited {
+    color: #000; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
@@ -143,7 +145,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 header {
-  position: relative; }
+  position: relative;
+  display: none; }
 
 .header-wrapper {
   position: absolute;
@@ -189,7 +192,9 @@ header {
   width: 60px;
   height: 60px;
   display: block;
-  position: relative; }
+  position: relative;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
 
 .hamburger-inner {
   position: absolute;
@@ -198,7 +203,8 @@ header {
   height: 2px;
   width: 20px;
   right: 25px;
-  top: 50%; }
+  top: 27px;
+  margin-right: -4px; }
   .hamburger-inner::before {
     content: "";
     display: block;
@@ -219,7 +225,57 @@ header {
     position: absolute; }
 
 .side-nav-wrapper {
-  display: none; }
+  position: relative; }
+
+.side-nav-inner {
+  position: absolute;
+  position: fixed;
+  z-index: 99999;
+  background-color: #000;
+  width: 500px;
+  height: 100vh;
+  overflow: scroll; }
+
+.side-nav-items {
+  list-style: none;
+  padding: 80px;
+  margin: 0; }
+  .side-nav-items .side-nav-itemLink {
+    color: #fff; }
+
+.nav-title-projects,
+.nav-title-contact {
+  font-size: 22px;
+  position: relative;
+  margin-top: 20px; }
+  .nav-title-projects::before,
+  .nav-title-contact::before {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: #fff;
+    top: -20px;
+    left: 0;
+    position: absolute; }
+
+.nav-title-contact {
+  margin-top: 60px;
+  margin-bottom: 0; }
+
+.nav-title {
+  font-size: 16px;
+  margin: 20px 0px 0px 0px;
+  line-height: 24px; }
+
+.nav-description {
+  font-size: 14px;
+  margin: 0; }
+
+.nav-title,
+.nav-description,
+.nav-title-projects,
+.nav-title-contact {
+  font-weight: normal; }
 
 .project-gallery-container {
   display: -webkit-box;

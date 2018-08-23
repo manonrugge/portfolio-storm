@@ -1,3 +1,66 @@
 .side-nav-wrapper {
-    display: none;
+    // display: none;
+    position: relative;
+}
+
+.side-nav-inner {
+    position: absolute;
+    position: fixed;
+    z-index: 99999;
+    background-color: $black;
+    width: 500px;
+    height: 100vh;
+    overflow: scroll;
+}
+
+.side-nav-items {
+    list-style: none;
+    padding: 80px;
+    margin: 0;
+    .side-nav-itemLink {
+        color: $white;
+    }
+}
+
+// .side-nav-itemLink:hover {
+//         padding-left: 10px;   
+//     }   
+
+.nav-title-projects,
+.nav-title-contact {
+    font-size: $h1;
+    position: relative;
+    margin-top: 20px;
+    &::before {
+        content: "";
+        height: 2px;
+        width: 50px;
+        background-color: $white;
+        top: -20px;
+        left: 0;
+        position: absolute;
+    }
+}
+
+.nav-title-contact {
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+.nav-title {
+    font-size: $h3;
+    margin: 20px 0px 0px 0px;
+    line-height: 24px;
+}
+
+.nav-description {
+    font-size: $h4;
+    margin: 0;
+}
+
+.nav-title,
+.nav-description,
+.nav-title-projects,
+.nav-title-contact {
+    font-weight: normal;
 }
