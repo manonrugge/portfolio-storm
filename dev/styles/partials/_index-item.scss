@@ -27,7 +27,6 @@
     }
 }
 
-
 figcaption {
     display: flex;
     flex-direction: row;
@@ -46,4 +45,8 @@ figcaption {
         bottom: 40px;
         right: 80px;
     }
+}
+
+.white-text {
+    color: $white;
 }
