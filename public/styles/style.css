@@ -172,12 +172,20 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 780px) {
+    .header-wrapper {
+      top: 70px;
+      left: -30px;
+      width: 120px; } }
 
 .header-name {
   font-size: 22px;
   font-weight: normal;
   padding-left: 20px;
   color: #000; }
+  @media (max-width: 780px) {
+    .header-name {
+      display: none; } }
 
 .hamburger {
   display: block;
@@ -223,6 +231,31 @@ header {
     right: 0;
     background-color: #000;
     position: absolute; }
+
+.header-logo {
+  display: none; }
+  @media (max-width: 780px) {
+    .header-logo {
+      display: block; } }
+
+.logo {
+  display: block;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
+
+.logo-box {
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: relative;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+  .logo-box img {
+    width: 20px; }
 
 .side-nav-wrapper {
   position: relative; }
@@ -300,18 +333,37 @@ header {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  @media (max-width: 780px) {
+    .project-gallery-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .section-column {
   width: calc(50% - 5px);
   margin-bottom: 10px; }
   .section-column:nth-child(3), .section-column:nth-child(4) {
     margin-bottom: 0; }
+  @media (max-width: 780px) {
+    .section-column {
+      width: 100%; }
+      .section-column:nth-child(3), .section-column:nth-child(4) {
+        margin-bottom: 10px; }
+      .section-column:last-child {
+        margin-bottom: 0; } }
 
 .left {
   margin-right: 5px; }
+  @media (max-width: 780px) {
+    .left {
+      margin-right: 0; } }
 
 .right {
   margin-left: 5px; }
+  @media (max-width: 780px) {
+    .right {
+      margin-left: 0; } }
 
 .index-item-image-wrapper {
   position: relative; }

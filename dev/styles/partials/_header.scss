@@ -1,6 +1,5 @@
 header {
     position: relative;
-    // display: none;
 }
 
 .header-wrapper {
@@ -19,6 +18,11 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media (max-width: 780px) {
+        top: 70px;
+        left: -30px;
+        width: 120px;
+    }
 }
 
 .header-name {
@@ -26,6 +30,9 @@ header {
     font-weight: normal;
     padding-left: 20px;
     color: $black;
+    @media (max-width: 780px) {
+        display: none;
+    }
 }
 
 // styling hamburger
@@ -74,5 +81,33 @@ header {
         right: 0;
         background-color: $black;
         position: absolute;
+    }
+}
+
+// header logo on mobile 
+.header-logo {
+    display: none;
+    @media (max-width: 780px) {
+        display: block;
+    }
+}
+
+.logo {
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    border: none!important;
+    box-shadow: none!important;
+}
+
+.logo-box {
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+    transform: rotate(90deg);
+    img {
+        width: 20px;
     }
 }
