@@ -1,0 +1,74 @@
+.contact-page-wrapper {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 780px) {
+        flex-direction: column;
+    }
+}
+
+.profile-image {
+    height: 100vh;
+}
+
+.profile-image,
+.contact-section-wrapper {
+    width: 50%;
+    @media (max-width: 780px) {
+        width: 100%;
+    }
+}
+
+.profile-image {
+    background-image: url("./../assets/portfolio/rickstorm_001.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-section-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 80px;
+    @media (max-width: 780px) {
+        justify-content: flex-start;
+        padding: 40px;
+    }
+}
+
+.social-nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 25px;
+}
+
+.social-icon {
+    width: 25px;
+    margin-right: 10px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.line-element {
+    width: 40px;
+    border-bottom: 2px solid black;
+    margin: 40px 0px 0px 0px;
+}
+
+.contact-information-title {
+    font-size: $h1;
+    margin: 20px 0px 0px 0px;
+    font-weight: normal;
+}
+
+.email,
+.phone {
+    margin: 20px 0px 0px 0px;
+    font-size: $h4;
+    a {
+        font-size: $h3;
+    }
+}
