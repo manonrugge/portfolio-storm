@@ -45,8 +45,8 @@
 .section-column {
     width: calc(50% - 5px);
     margin-bottom: 10px;
-    &:nth-child(3),
-    &:nth-child(4) {
+    &:nth-child(5),
+    &:nth-child(6) {
         margin-bottom: 0;
     }
     @media (max-width: 780px) {
@@ -95,10 +95,16 @@ figcaption {
     .index-item-title {
         bottom: 40px;
         left: 80px;
+        @media (max-width: 780px) {
+            left: 40px;
+        }
     }
     .index-item-description {
         bottom: 40px;
         right: 80px;
+        @media (max-width: 780px) {
+            right: 40px;
+        }
     }
 }
 

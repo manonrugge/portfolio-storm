@@ -39,7 +39,9 @@
 
 .cover-image-wrapper,
 .single-image-wrapper,
-.video-wrapper {
+.video-wrapper,
+.double-image-wrapper,
+.video-wrapper-website {
     margin-bottom: 10px;
 }
 
@@ -83,4 +85,8 @@
     img {
         width: 100%;
     }
+}
+
+.video-wrapper-website {
+    padding: 80px;    
 }
