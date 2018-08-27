@@ -8,6 +8,102 @@
     <link rel="stylesheet" href="./public/styles/style.css">
 </head>
 <body>
+
+    <header>
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="http://rickstorm.nl">
+                    <h1 class="header-name">Rick Storm</h1>
+                </a>
+            </div>
+            <!-- only visible on mobile -->
+            <div class="header-logo">
+                <button class="logo" type="button" aria-label="logo" aria-controls="home button">
+                    <span class="logo-box">
+                        <img src="./public/assets/elements/logomobile_001.svg" alt="logo abstracte bliksemschicht">
+                    </span>
+                </button>
+            </div>
+    
+            <div class="header-hamburger">
+                <button id="hamburger" class="hamburger hamburger-squeeze" type="button" aria-label="menu" aria-controls="navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- page header ends -->
+    
+    <!-- page navigation start -->
+    <nav class="side-nav-wrapper">
+        <div class="side-nav-inner">
+            <ul class="side-nav-items">
+                <div class="hr-projects"></div>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink projects" href="http://rickstorm.nl">
+                        <h1 class="nav-title-projects">Projects</h1>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink" href="shift-2019.html">
+                        <h2 class="nav-title">Shift 2019</h2>
+                        <h3 class="nav-description">Identity</h3>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink" href="museum-voorlinden.html">
+                        <h2 class="nav-title">Museum Voorlinden</h2>
+                        <h3 class="nav-description">Identity</h3>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink" href="http://rickstorm.nl/anne-yoga">
+                        <h2 class="nav-title">Anne Yoga</h2>
+                        <h3 class="nav-description">Identity</h3>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink" href="http://rickstorm.nl/filmhuis-denHaag">
+                        <h2 class="nav-title">Filmhuis Den Haag</h2>
+                        <h3 class="nav-description">Identity</h3>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink" href="http://rickstorm.nl/tulla">
+                        <h2 class="nav-title">Tulla Culture Center</h2>
+                        <h3 class="nav-description">Identity</h3>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink" href="http://rickstorm.nl/traveling-through">
+                        <h2 class="nav-title">Traveling Through</h2>
+                        <h3 class="nav-description">Illustration</h3>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink" href="http://rickstorm.nl/structures-of-tirana">
+                        <h2 class="nav-title">Structures Of Tirana</h2>
+                        <h3 class="nav-description">Photography</h3>
+                    </a>
+                </li>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink" href="hostel-durres.html">
+                        <h2 class="nav-title">Hostel Durres</h2>
+                        <h3 class="nav-description">Identity</h3>
+                    </a>
+                </li>
+                <div class="hr-contact"></div>
+                <li class="side-nav-item">
+                    <a class="side-nav-itemLink contact" href="contact.html">
+                        <h1 class="nav-title-contact">Contact</h1>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- page navigation ends -->
     <main class="site-page">
 
         <!-- project cover image -->
@@ -74,7 +170,7 @@
     
     <!-- site footer --> 
     <footer class="site-footer">
-        <a href="">Previous
+        <a class="site-nav-left" href="hostel-durres.html">Previous
             <div class="arrow">
                 <div class="arrow-inner">
                     <svg class="arrow-left" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -84,7 +180,7 @@
                 </div>
             </div>
         </a>
-        <a href="">Next
+        <a class="site-nav-right" href="museum-voorlinden.html">Next
             <div class="arrow">
                 <div class="arrow-inner">
                     <svg class="arrow-right" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -95,5 +191,10 @@
             </div>
         </a>
     </footer>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='
+        crossorigin='anonymous'></script>
+    <script src="./public/scripts/main.js"></script>
+
 </body>
 </html>

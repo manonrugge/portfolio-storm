@@ -16,6 +16,11 @@
         width: 20px;
         top: -15px;
         left: -30px;
+        transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+        &.move-left {
+            left: -40px;
+            transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+        }
     }
     .arrow-inner .arrow-right {
         position: absolute;
@@ -23,5 +28,10 @@
         width: 20px;
         top: -15px;
         left: 45px;
+        transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+        &.move-right {
+            left: 55px;
+            transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+        }
     }
 }
