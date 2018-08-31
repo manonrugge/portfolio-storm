@@ -37,6 +37,7 @@ header {
         transition: all 0.4s ease-in-out;
         @media (max-width: 780px) {
             left: 210px;
+            transition: all 0.4s ease-in-out;    
         }
     }
     @media (max-width: 780px) {

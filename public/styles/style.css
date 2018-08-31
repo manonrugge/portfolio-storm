@@ -194,7 +194,9 @@ header {
     transition: all 0.4s ease-in-out; }
     @media (max-width: 780px) {
       .header-wrapper.push {
-        left: 210px; } }
+        left: 210px;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; } }
   @media (max-width: 780px) {
     .header-wrapper {
       top: 70px;
@@ -292,12 +294,15 @@ header {
   height: 100vh;
   overflow: scroll;
   top: 0;
-  left: -490px;
+  left: -480px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out; }
   @media (max-width: 780px) {
     .side-nav-inner {
-      width: 240px; } }
+      left: -240px;
+      width: 240px;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; } }
   .side-nav-inner.open {
     left: 0;
     -webkit-transition: all 0.4s ease-in-out;
@@ -468,11 +473,11 @@ figcaption {
   color: #fff; }
 
 .site-page {
-  -moz-animation: fadein 0.8s;
+  -moz-animation: fadein 0.8s ease-in-out;
   /* Firefox */
-  -webkit-animation: fadein 0.8s;
+  -webkit-animation: fadein 0.8s ease-in-out;
   /* Safari and Chrome */
-  -o-animation: fadein 0.8s;
+  -o-animation: fadein 0.8s ease-in-out;
   /* Opera */ }
 
 @keyframes fadein {
