@@ -5,9 +5,16 @@ jQuery(document).ready(function () {
 
     $('.hamburger').click(function () {
         // console.log('hello');
-        // $('#hamburger').toggleClass('clicked');
         $('.header-wrapper').toggleClass('push');
         $('.side-nav-inner').toggleClass('open');
+        $('.overlay').toggleClass('overlay-visible');
+    });
+
+    $('.overlay').click(function () {
+        console.log('hello');
+        $('.header-wrapper').toggleClass('push');
+        $('.side-nav-inner').toggleClass('open');
+        $('.overlay').toggleClass('overlay-visible');
     });
 
     $('.site-nav-left').hover(function () {

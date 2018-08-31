@@ -151,9 +151,27 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 header {
   position: relative; }
 
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+  .overlay.overlay-visible {
+    visibility: visible;
+    opacity: 0.5; }
+
 .header-wrapper {
   position: absolute;
-  background-color: white;
+  background-color: #fff;
   width: 240px;
   height: 60px;
   -webkit-transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
@@ -272,7 +290,7 @@ header {
 .side-nav-inner {
   position: absolute;
   position: fixed;
-  z-index: 999;
+  z-index: 9999;
   background-color: #000;
   width: 480px;
   height: 100vh;
@@ -540,7 +558,7 @@ figcaption {
       padding: 30px 40px 40px 40px; } }
 
 .square-image {
-  width: calc(50% -80px);
+  width: 50%;
   margin-right: 80px; }
   .square-image:last-child {
     margin-right: 0; }
@@ -549,6 +567,7 @@ figcaption {
     display: block; }
   @media (max-width: 780px) {
     .square-image {
+      width: 100%;
       margin-right: 0; }
       .square-image:first-child {
         padding-bottom: 40px; } }
