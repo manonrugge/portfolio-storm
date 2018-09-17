@@ -25,4 +25,25 @@ jQuery(document).ready(function () {
     $('.site-nav-right').hover(function () {
         $('.arrow-right').toggleClass('move-right');
     });
+
+    var clickDelay = 500,
+        clickDelayTimer = null;
+
+    $('.hamburger').on('click', function () {
+        if (clickDelayTimer === null) {
+
+            var $burger = $(this);
+            $burger.toggleClass('active');
+
+            if (!$burger.hasClass('active')) {
+                $burger.addClass('closing');
+            }
+
+            clickDelayTimer = setTimeout(function () {
+                $burger.removeClass('closing');
+                clearTimeout(clickDelayTimer);
+                clickDelayTimer = null;
+            }, clickDelay);
+        }
+    });
 });

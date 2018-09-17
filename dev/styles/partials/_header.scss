@@ -60,7 +60,6 @@ header {
 // styling hamburger
 .hamburger  {
     display: block;
-    cursor: pointer;
     background-color: transparent;
     padding: 0;
     border: none!important;
@@ -73,36 +72,103 @@ header {
     display: block;
     position: relative;
     transform: rotate(90deg);
+    cursor: pointer;
 }
 
+$menu-animation-duration: 0.4s;
+$menu-animation-timing:   ease-out;
+
+
 .hamburger-inner {
+    display: block;
     position: absolute;
     z-index: 9999999;
     background-color: $black;
     height: 2px;
     width: 20px;
-    right: 25px;
-    top: 27px;
-    margin-right: -4px;
-    &::before {
-        content: "";
-        display: block;
-        height: 2px;
-        width: 20px;
-        top: -7px;
-        right: 0;
-        background-color: $black;
-        position: absolute;
+    right: 20px;
+    transition: transform $menu-animation-duration $menu-animation-timing;
+  
+    &:nth-child(1) {    
+        top: 20px;
     }
-    &::after {
-        content: "";
-        display: block;
-        height: 2px;
-        width: 20px;
-        bottom: -7px;
-        right: 0;
-        background-color: $black;
-        position: absolute;
+    
+    &:nth-child(2) {
+        top: 27px;
+        opacity: 1;
+        transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2;
+    }
+    
+    &:nth-child(3) {
+        bottom: 24px;
+    }
+    
+    .active & {
+        
+        &:nth-child(1) {
+            animation: burger-open-top $menu-animation-duration $menu-animation-timing forwards;
+        }
+        
+        &:nth-child(2) {
+            opacity: 0;
+            transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2;
+        }
+        
+        &:nth-child(3) {
+            animation: burger-open-bot $menu-animation-duration $menu-animation-timing forwards;
+        }
+    }
+  
+    .closing & {
+        &:nth-child(1) {
+        animation: burger-close-top $menu-animation-duration $menu-animation-timing forwards;
+        }
+        
+        &:nth-child(3) {
+        animation: burger-close-bot $menu-animation-duration $menu-animation-timing forwards;
+        }
+    }
+}
+
+@keyframes burger-open-top {
+    50% {
+        transform: translate3d(0, 7px, 0);
+    }
+    100% {
+        transform: translate3d(0, 7px, 0) rotate(45deg);
+    }
+}
+
+@keyframes burger-open-bot {
+    50% {
+        transform: translate3d(0, -7px, 0);
+    }
+    100% {
+        transform: translate3d(0, -7px, 0) rotate(-45deg);
+    }
+}
+
+@keyframes burger-close-top {
+    0% {
+        transform: translate3d(0, 7px, 0) rotate(45deg);
+    }
+    50% {
+        transform: translate3d(0, 7px, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes burger-close-bot {
+    0% {
+        transform: translate3d(0, -7px, 0) rotate(-45deg);
+    }
+    50% {
+        transform: translate3d(0, -7px, 0) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
     }
 }
 

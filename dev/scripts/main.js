@@ -26,4 +26,26 @@ jQuery(document).ready(function () {
         $('.arrow-right').toggleClass('move-right');
     });
 
+    
+    let     clickDelay = 500,
+            clickDelayTimer = null;
+    
+    $('.hamburger').on('click', function () {
+        if (clickDelayTimer === null) {
+    
+            const $burger = $(this);
+            $burger.toggleClass('active');
+            
+    
+            if (!$burger.hasClass('active')) {
+                $burger.addClass('closing');
+            }
+    
+            clickDelayTimer = setTimeout(function () {
+                $burger.removeClass('closing');
+                clearTimeout(clickDelayTimer);
+                clickDelayTimer = null;
+            }, clickDelay);
+        }
+    });
 });
